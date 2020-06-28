@@ -41,15 +41,20 @@ class Ferrari implements automovil
         if ($this->GetLLave() == true) {
             
             $this->GetGas();
+            $reducir = $km/3;
         
             if ($this->GetGas() >= $km) {
+                Show("Kilometros a Recorrer = $km");
+
                 Show("Se han recorrido $km  Kilometros durante el Paseo hacia el Corazon de Migdaly");
-                $this->SetGas($this->GetGas() - $km);
+                $this->SetGas($this->GetGas() - $reducir);
 
                 Show("Cantidad de Gasolina Disponible {$this->GetGas()}");
             }
             
             elseif ($this->GetGas() < $km) {
+                Show("Kilometros a Recorrer = $km");
+                
                 Show("Cantidad de Gasolina insuficiente para realizar este viaje Pelabola");
 
                 Show("Cantidad de Gasolina Disponible {$this->GetGas()}");

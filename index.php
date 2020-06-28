@@ -12,6 +12,5 @@ $car = new Ferrari();
 $car->Encender();
 
 $car->SetGas(1000);
-$car->Conducir(100);
-$car->Conducir(500);
-$car->Conducir(400);
+$car->Conducir(700);
+$car->Conducir(700);
