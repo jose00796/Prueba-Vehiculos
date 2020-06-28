@@ -49,7 +49,7 @@ class Ferrari implements automovil
                 Show("Se han recorrido $km  Kilometros durante el Paseo hacia el Corazon de Migdaly");
                 $this->SetGas($this->GetGas() - $reducir);
 
-                Show("Cantidad de Gasolina Disponible {$this->GetGas()}");
+                Show('Cantidad de Gasolina Disponible = '. round($this->GetGas()));
             }
             
             elseif ($this->GetGas() < $km) {
@@ -57,7 +57,7 @@ class Ferrari implements automovil
                 
                 Show("Cantidad de Gasolina insuficiente para realizar este viaje Pelabola");
 
-                Show("Cantidad de Gasolina Disponible {$this->GetGas()}");
+                Show('Cantidad de Gasolina Disponible = '. round($this->GetGas()));
             }
 
             if ($this->GetGas() <= 0) {
