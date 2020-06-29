@@ -8,6 +8,9 @@ spl_autoload_register(function($classname){
             }
 });
 
+$jose = new comprador('Jose', 'Andres', 25418204);
+$jose->SetMoney(5000);
+
 $car = new Ferrari();
 $car->Encender();
 
